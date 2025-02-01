@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Lucida Console;
+    font-size: medium;
+    background-image: url('line.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0);
+    line-height: 1.7;
+}
+
+.header {
+    background-color: #31658a;
+    font-size: large;
+    text-align: center;
+    margin: 1px;
+    padding: 20px;
+    color: white;
+}
+
+.me {
+    display: flex;
+    padding: 20px;
+}
+
+#about-me {
+    padding: 20px;
+    width: 70%;
+}
+
+#projects {
+    text-align: center;
+    color: #070707;
+    background-color: rgb(102, 144, 155);
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 20%;
+    margin: 10px;
+    background-color: #506c80;
+}
+
+.card-header {
+    background-color: #343a40;
+    color: #dfd0d0;
+}
+
+.btn-primary {
+    margin-top: auto; 
+}
+
+@media (max-width: 768px) {
+    .me {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    #about-me {
+        width: 100%; 
+        text-align: center; 
+    }
+
+   .card-container {
+       flex-direction: column;
+       align-items: center;
+       width: 100%;
+       padding-bottom: 20px; 
+   }
+
+   .card {
+       width: 70%;
+       margin-bottom: 20px; 
+   }
+}
